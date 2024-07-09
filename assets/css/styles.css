@@ -116,6 +116,7 @@ header{
 }
 .header img{
     width: 80%;
+    padding-top: 10% ;
 }
 header h2{
     font-weight: 700;
@@ -286,4 +287,31 @@ button.enviar {
     font-size: 1.2rem;
     font-weight: 500;
     margin-top: 20px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    padding: 30px 50px 30px;
+    gap: 15%;
+}
+
+.footer img{
+    width: 100%;
+}
+.footer i{
+    color:#fff;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.footer i:hover{
+    color: #34B4DE;
+}
+
+.footer p{
+    color:#ffffff;
+    font-size: 1rem;
+    padding-top: 20px;
 }
