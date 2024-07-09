@@ -211,11 +211,12 @@ iframe{
     justify-content: center;
     align-items: center;
     grid-area: somos;
+    width: 100vw;
 }
 
 .somos img{
     padding-top: 50px;
-    width: 80%;
+    width: 100%;
 }
 
 .txt{
