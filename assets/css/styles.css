@@ -109,8 +109,8 @@ header{
     justify-content: center;
     align-items: center;
 }
-header img{
-    width: calc(100vw - 300px);
+.header img{
+    width: 80%;
 }
 header h2{
     font-weight: 700;
@@ -124,6 +124,7 @@ header h2{
         transform: translateX(5px);
     }
 }
+
 .contenedor{
     display: flex;
     flex-direction: column;
@@ -132,33 +133,7 @@ header h2{
     background-color: var(--bg-color);
     overflow: hidden;
     border-color: #ffffff;
-}
-.wave{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-image: url(../img/wavet.png);
-    background-size: 1000px 100px;
-    animation: wave 5s linear infinite;
-}
-.waveb{
-    position: relative;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-image: url(../img/waveb.png);
-    background-size: 1000px 100px;
-    margin-bottom: 0;
-    animation: wave 5s linear infinite;
-}
-@keyframes wave {
-    0%{
-        background-position-x:0 ;
-    }
-    100%{
-        background-position-x: 1000px;
-    }
+    grid-area: video;
 }
 .cont{
     display: flex;
@@ -172,7 +147,7 @@ header h2{
     align-items: center;
     height: 450px;
     z-index: 1000;
-    padding-top: 50px;
+    padding: 50px;
 }
 .btn{
     width:fit-content;
@@ -190,11 +165,40 @@ header h2{
 .btn:hover{
     background-color: var(--hover-botones) ;
 }
+.wave{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/wavet.png);
+    background-size: 1000px;
+    animation: wave 5s linear infinite;
+}
+.waveb{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/waveb.png);
+    background-size: 1000px;
+    margin-bottom: 0;
+    animation: wave 5s linear infinite;
+}
+@keyframes wave {
+    0%{
+        background-position-x:0 ;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
 .somos{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    grid-area: somos;
 }
 
 .somos img{
