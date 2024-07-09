@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --color-botones: #34B4DE;
+    --color-letra-botones: #ffffff;
+    --hover-botones: #50D2ED;
+    --bg-color: #08194C; 
+}
+#root{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:  'navbar'
+                          'header'
+                          'video'
+                          'somos'
+                          'contacto'
+                          'footer'
+
+    ;   
+    font-family: "Lato", sans-serif;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: var(--bg-color);
+    grid-area: navbar;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+    gap:30px
+    
+}
+.menu-toggler{
+    background: none;
+    border:none;
+    color: #d4d9df;
+    font-size: 1.25rem;
+
+}
+.drop-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: fixed;
+    top:118px;
+    right: 0;
+    background: var(--bg-color);
+    color: #d4d9df;
+    width: 80%;
+    max-width: 250px;
+    padding: 3rem;
+    height: calc(30vh - 120px);
+    transform: translatex(100%);
+    transition: transform 0.2s ease;
+    z-index: 1000;
+    border-color: #34B4DE;
+
+}
+.open .nav .drop-list{
+    transform: translatex(0);
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px
+    
+}
+
+button{
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+}
+.iniciar{
+    background-color: var(--color-botones);
+    color: var(--color-letra-botones);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border-color: var(--color-botones);
+    outline: none;
+}
+.iniciar:hover{
+    background-color: var(--hover-botones) ;
+}
+header{
+    display: grid;
+    grid-area: header;
+
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    width: calc(100vw - 300px);
+}
+header h2{
+    font-weight: 700;
+    animation: mostrar 2s 1 ;
+}
+@keyframes mostrar{
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(5px);
+    }
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    background-color: var(--bg-color);
+    overflow: hidden;
+    border-color: #ffffff;
+}
+.wave{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/wavet.png);
+    background-size: 1000px 100px;
+    animation: wave 5s linear infinite;
+}
+.waveb{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/waveb.png);
+    background-size: 1000px 100px;
+    margin-bottom: 0;
+    animation: wave 5s linear infinite;
+}
+@keyframes wave {
+    0%{
+        background-position-x:0 ;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    z-index: 1000;
+    padding-top: 50px;
+}
+.btn{
+    width:fit-content;
+    height: fit-content;
+    background-color: var(--color-botones);
+    color: #ffffff;
+    border-radius: 5px;
+    border-color: var(--color-botones);
+    font-size: 1.1rem;
+    padding: 1.5em 3em 1.5em;
+    font-weight: 500;
+    
+
+}
+.btn:hover{
+    background-color: var(--hover-botones) ;
+}
+.somos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.somos img{
+    padding-top: 50px;
+    width: 400px;
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 50px 50px;
+
+
+}
+.txt h3{
+    font-size: 1.5rem;
+}
