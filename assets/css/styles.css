@@ -119,7 +119,7 @@ header{
 }
 header h2{
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     animation: mostrar 2s 1 ;
 }
 @keyframes mostrar{
@@ -152,7 +152,7 @@ header h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: 450px;
     z-index: 1000;
     padding: 50px;
@@ -219,12 +219,12 @@ iframe{
     width: 100%;
 }
 
-.txt{
+.txt{ 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15%;
+    gap: 40px;
     padding: 50px 50px 50px;
 }
 .txt h3{
