@@ -38,6 +38,7 @@ a{
     color: #ffffff;
     font-family: "Lato", sans-serif;
 }
+
 .nav{
     display: flex;
     justify-content: end;
@@ -45,7 +46,7 @@ a{
     background-color: var(--bg-color);
     grid-area: navbar;
     font-family: 'Inter', sans-serif;
-    padding: 1rem;
+    padding: 1rem 2rem 1rem;
     gap:5%;
     width: 100vw;
     font-size: 0.8rem;
@@ -354,7 +355,7 @@ button.enviar {
 }
 
 @media (min-width:576px) {
-    
+
     .nav{
         display: flex;
         justify-content: flex-start;
@@ -362,7 +363,7 @@ button.enviar {
         align-content: center;
         background-color: var(--bg-color);
         grid-area: navbar;
-        padding: 1rem;
+        padding: 1rem 4rem 1rem;
         width: 100vw;
         font-size: 1rem;
         font-family: 'Inter', sans-serif;
@@ -378,7 +379,7 @@ button.enviar {
         justify-content: flex-end;
         align-items: end;
         top: 0.8rem;
-        right: 20%;
+        right: 22%;
         gap: 0.7rem;
         background: var(--bg-color);
         color: #d4d9df;
@@ -427,6 +428,8 @@ button.enviar {
         grid-template-areas: 'video texto';
         justify-items: center;
         align-items: center;
+        height: max-content;
+        padding-top: 5%;
     }
 
     .cont .txt-registro{
@@ -458,6 +461,9 @@ button.enviar {
         flex-direction: row-reverse;
         padding: 5%;                                                                                  ;
     }
+    .somos  .txt{
+        font-size: 1.2rem;
+    }
     .somos img{
         width: 500px;
         padding: 50px;
@@ -475,7 +481,7 @@ button.enviar {
     }
     .logo-footer{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         width: 100%;
         padding: 1% 5% 1%;
