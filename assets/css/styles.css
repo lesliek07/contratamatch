@@ -50,36 +50,52 @@ a{
     width: 100vw;
     font-size: 0.8rem;
 }
-.menu-toggler{
+.menu-toggler, .cerrar{
     background: none;
     border:none;
     color: #d4d9df;
     font-size: 1.5rem;
+    cursor: pointer;
 
 }
 .drop-list{
     list-style: none;
     display: flex;
     flex-direction: column;
+    align-items: end;
     gap: 1rem;
     position: fixed;
-    top:100px;
+    top:0;
     right: 0;
     background: var(--bg-color);
     color: #d4d9df;
     width: 80%;
     max-width: 250px;
     padding: 2rem;
-    height: calc(30vh - 100px);
+    height: 100vh;
     transform: translateX(100%);
     transition: transform 0.2s ease;
     z-index: 1000;
     border-color: #34B4DE;
     font-size: 0.8em;
+    
 
+}
+.drop-list i{
+     padding: 1rem;
 }
 .open .nav .drop-list{
     transform: translateX(0);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+}
+
+.lista{
+    flex-direction: column;
+    align-items: end;
+
+}
+.lista li{
+    padding: 1rem;
 }
 .nav ul{
     list-style: none;
