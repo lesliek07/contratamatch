@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,44 +9,67 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
+
 <body>
     <div id="root">
-        <nav class="nav">
-            <div class="nav container">            
-                    <div id="toggler" class="menu-toggler">
-                        <i class="fa-solid fa-ellipsis-vertical fa-beat"></i>
-                    </div>
-                    <div class=" drop-list" id="menu">
-                        <div class="cerrar" id="cerrar">
-                            <i class="fa-solid fa-xmark fa-rotate-180"></i>
-                        </div>
-                        <ul class="lista" id="lista">
-                            <li class=""><a class="" aria-current="page" href="#header">INICIO</a></li>
-                            <li class=""><a class="" href="#about">QUIENES SOMOS</a></li>
-                            <li class=""><a class="" href="#contacto">CONTACTO</a></li>
-                          </ul>
-                    </div>
-
-                    <button class="iniciar" type="submit">Iniciar Sesión</button>
+        <nav class="">
+            <div class="nav">
+                <div class="registro">
                     <ul>
                         <li class=""><a class="" href="">Registrate gratis</a></li>
                     </ul>
+                    <button class="iniciar" type="submit">Iniciar Sesión</button>
+                </div>
+
+                <div id="toggler" class="menu-toggler">
+                    <i class="fa-solid fa-ellipsis-vertical fa-beat"></i>
+                </div>
+                <div class=" drop-list" id="menu">
+                    <div class="cerrar" id="cerrar">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <ul class="lista" id="lista">
+                        <li class=""><a class="" aria-current="page" href="#header">INICIO</a></li>
+                        <li class=""><a class="" href="#about">QUIENES SOMOS</a></li>
+                        <li class=""><a class="" href="#contacto">CONTACTO</a></li>
+                    </ul>
+                </div>
+
+
+
             </div>
         </nav>
         <header id="header">
             <div class="header">
-            
+                <div class="logo">
                     <img src="assets/img/logonegroletras.png" alt="">
                     <h2>La nueva aplicación de reclutamiento</h2>
-                
+                </div>
+                <div class="imgHeader">
+                    <img src="assets/img/imgheader.png" alt="">
+                </div>
+
             </div>
         </header>
         <section id="video">
             <div class="contenedor">
                 <div class="wave"></div>
                 <div class="cont">
-                <div class="video"><iframe  src="https://www.youtube.com/embed/a6Fl1Xl1ogg?si=IyEdU8D3pOiIiswd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                <div><button class="btn">REGISTRATE GRATIS</button></div>
+                    <div class="video"><iframe src="https://www.youtube.com/embed/a6Fl1Xl1ogg?si=IyEdU8D3pOiIiswd"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="txt-registro">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Modi cum debitis repellendus asperiores enim quibusdam voluptas,
+                            odit consectetur sequi fuga natus sunt aspernatur, at cupiditate alias
+                            reprehenderit libero, quae molestias!
+                            Modi cum debitis repellendus asperiores enim quibusdam voluptas,
+                            odit consectetur sequi fuga natus sunt aspernatur, at cupiditate alias
+                            reprehenderit libero, quae molestias!</p>
+                        <button class="btn">REGISTRATE GRATIS</button>
+                    </div>
                 </div>
                 <div class="waveb"></div>
             </div>
@@ -55,7 +79,13 @@
                 <div data-aos="zoom-in"><img src="assets/img/somos.png" alt=""></div>
                 <div class="txt" data-aos="zoom-in">
                     <h3>¿Quiénes somos?</h3>
-                    <p>En ContrataMatch, nos apasiona la conexión entre talento humano y las oportunidades que entregan las empresas del País. Somos un equipo comprometido con la mejora continua de los procesos de contratación, facilitando la búsqueda y selección de profesionales calificados para  todo el país. Nuestra visión es ser el aliado estratégico de cada empresa o profesional reclutador , proporcionando soluciones innovadoras y tecnológicas que impulsen el crecimiento y el éxito en el ámbito de su negocio.</p></div>
+                    <p>En ContrataMatch, nos apasiona la conexión entre talento humano y las oportunidades que entregan
+                        las empresas del País. Somos un equipo comprometido con la mejora continua de los procesos de
+                        contratación, facilitando la búsqueda y selección de profesionales calificados para todo el
+                        país. Nuestra visión es ser el aliado estratégico de cada empresa o profesional reclutador ,
+                        proporcionando soluciones innovadoras y tecnológicas que impulsen el crecimiento y el éxito en
+                        el ámbito de su negocio.</p>
+                </div>
             </div>
         </section>
         <section id="pasos"></section>
@@ -72,22 +102,26 @@
 
         </section>
         <footer id="footer">
-           <div class="footer">
-            <div><img src="assets/img/logoblancoletras.png" alt="Logo ContrataMatch"></div>
-            <div>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-youtube"></i>
+            <div class="footer">
+                <div class="logo-footer">
+                    <div><img src="assets/img/logoblancoletras.png" alt="Logo ContrataMatch"></div>
+                    <div>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+
+                <p>@2024 ContrataMatch. Todos los derechos reservados</p>
             </div>
-            <p>@2024 ContrataMatch. Todos los derechos reservados</p>
-           </div>
         </footer>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
     <script src="https://kit.fontawesome.com/95f2dcf4d4.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
