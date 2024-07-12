@@ -159,8 +159,6 @@ button{
     animation-name: animarsuperior;
     animation-duration: 0.5s
     
-    
-    
 }
 /* Animación */
 @-webkit-keyframes animatetop {
@@ -464,10 +462,17 @@ button.enviar {
 
     ;   
     }
+    .logo img{
+        width: 50%;
+    }
+    .logo h2{
+        font-size: 1.8rem;
+    }
     .imgHeader{
         display: block;
         grid-area: imagen;
-        place-self: end;
+        justify-self: center;
+        align-self: end;
         
     }
     .imgHeader img{
