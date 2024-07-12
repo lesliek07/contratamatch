@@ -39,6 +39,7 @@ a{
     font-family: "Lato", sans-serif;
 }
 
+
 .nav{
     display: flex;
     justify-content: end;
@@ -107,10 +108,15 @@ a{
 }
 .nav ul{
     list-style: none;
-    display: flex;
+    display: flex;  
+}
+.registro li{
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
     
 }
-
 button{
     cursor: pointer;
     font-family: "Lato", sans-serif;
@@ -125,6 +131,53 @@ button{
 }
 .iniciar:hover{
     background-color: var(--hover-botones) ;
+}
+.modal{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    gap: 10px;
+    padding: 15px;
+    border-style: groove;
+    border-color: #34B4DE;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    z-index: 900;
+    
+    
+    
+}
+
+  
+.contenido-modal{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    -webkit-animation-name: animarsuperior;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s
+    
+    
+    
+}
+/* Animación */
+@-webkit-keyframes animatetop {
+    from {top: 60px; opacity:0} 
+    to {top:70px; opacity:1}
+  }
+  
+  @keyframes animarsuperior {
+    from {top: 60px; opacity:0}
+    to {top:70px; opacity:1}
+  }
+.contenido-modal div{
+    display: flex;
+    gap:10px;
+}
+.contenido-modal a{
+    color: #000000;
 }
 header{
     display: grid;
@@ -402,6 +455,7 @@ button.enviar {
     .registro{
         width: 20%;
     }
+
     .header{
         display: grid;
         grid-template-columns: 1fr 1fr;
